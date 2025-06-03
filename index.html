@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Principal -->
+    <title>SecretarIA - Automação WhatsApp para Clínicas e Escritórios | Agendamento Automático 24h</title>
+    <meta name="description" content="SecretarIA: Automação inteligente para WhatsApp que agenda consultas automaticamente. Para clínicas médicas, estéticas e escritórios de advocacia. Funciona 24h, custa 80% menos que funcionário. Demonstração gratuita!">
+    <meta name="keywords" content="automação whatsapp, agendamento automatico, clinica, secretaria virtual, assistente virtual, chatbot medico, automação escritorio advocacia, sistema agendamento, atendimento automatico, secretaria digital, ai whatsapp">
+    <meta name="author" content="SecretarIA">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="pt-BR">
+    <link rel="canonical" href="https://secretaria.lovable.app">
+    
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SecretarIA - Automação WhatsApp para Clínicas e Escritórios">
+    <meta property="og:description" content="🤖 A funcionária perfeita que trabalha 24h por dia e nunca adoece! Automação WhatsApp + agendamento automático para clínicas e escritórios. Economize 80% vs funcionário tradicional.">
+    <meta property="og:image" content="https://secretaria.lovable.app/og-image.jpg">
+    <meta property="og:url" content="https://secretaria.lovable.app">
+    <meta property="og:site_name" content="SecretarIA">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SecretarIA - Automação WhatsApp para Clínicas e Escritórios">
+    <meta name="twitter:description" content="🤖 A funcionária perfeita que trabalha 24h! Automação WhatsApp + agendamento automático. Economize 80% vs funcionário tradicional.">
+    <meta name="twitter:image" content="https://secretaria.lovable.app/og-image.jpg">
+    
+    <!-- WhatsApp -->
+    <meta property="whatsapp:title" content="SecretarIA - Automação WhatsApp 24h">
+    <meta property="whatsapp:description" content="🤖 Secretária digital que nunca dorme! Agendamento automático para clínicas e escritórios.">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SecretarIA",
+      "description": "Sistema de automação WhatsApp para agendamento automático em clínicas médicas, estéticas e escritórios de advocacia",
+      "url": "https://secretaria.lovable.app",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "200",
+        "priceCurrency": "BRL",
+        "priceValidUntil": "2025-12-31"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "SecretarIA",
+        "url": "https://secretaria.lovable.app"
+      },
+      "featureList": [
+        "Automação WhatsApp 24 horas",
+        "Agendamento automático Google Calendar",
+        "Respostas inteligentes",
+        "Integração sistemas médicos",
+        "Atendimento multilíngue"
+      ],
+      "screenshot": "https://secretaria.lovable.app/screenshot.jpg"
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Meta tags adicionais -->
+    <meta name="theme-color" content="#1a5490">
+    <meta name="msapplication-TileColor" content="#1a5490">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SecretarIA">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .invert {
+            --tw-invert: invert(100%);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+        .brightness-0 {
+            --tw-brightness: brightness(0);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a5490 0%, #00d4aa 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px auto;
+            background: white;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+
+        /* Problem Section */
+        .problem {
+            padding: 80px 0;
+            background: #f8f9ff;
+        }
+
+        .problem h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .problem-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .problem-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #1a5490;
+        }
+
+        .cost-highlight {
+            background: linear-gradient(135deg, #1a5490, #00d4aa);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cost-highlight h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cost-highlight .big-number {
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        /* Solution Section */
+        .solution {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .solution h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .solution-feature {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .solution-feature .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .solution-feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .benefits h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .benefit-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 80px 0;
+            background: #f8f9ff;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: #25D366;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Demo Section */
+        .demo {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .demo h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .chat-demo {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #e5ddd5;
+            border-radius: 15px;
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            max-width: 80%;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        .user-message {
+            background: #dcf8c6;
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .bot-message {
+            background: white;
+            margin-right: auto;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .problem h2, .solution h2, .benefits h2, .cta h2, .demo h2 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                
+                <h1>🤖 SecretarIA</h1>
+                <p class="subtitle">A <span class="highlight">funcionária perfeita</span> que trabalha 24h por dia<br>e nunca adoece, reclama ou falta</p>
+                <p style="font-size: 1.1rem; margin-top: 30px;">💰 Custa 80% menos que um funcionário tradicional</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>Você está perdendo <span style="color: #00d4aa; font-weight: 800;">clientes todos os dias</span></h2>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📞</div>
+                    <h3>Ligações Perdidas</h3>
+                    <p>Sua recepcionista está ocupada e 40% das ligações não são atendidas. Cada ligação perdida = cliente perdido.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">🕘</div>
+                    <h3>Fora do Horário</h3>
+                    <p>60% dos clientes tentam contato fora do horário comercial. Eles não esperam até segunda-feira.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">😤</div>
+                    <h3>Funcionários Estressados</h3>
+                    <p>Sua equipe fica sobrecarregada entre atender presencial, telefone e WhatsApp simultaneamente.</p>
+                </div>
+            </div>
+
+            <div class="cost-highlight">
+                <h3>💸 O Custo Real:</h3>
+                <p>Uma clínica média perde <span class="big-number">R$ 15.000</span> por mês em agendamentos não realizados</p>
+                <p style="margin-top: 15px;">Isso são R$ 180.000 por ano que saem do seu bolso!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2>🚀 A Solução que Revoluciona seu Atendimento</h2>
+            
+            <div class="solution-grid">
+                <div class="solution-feature">
+                    <div class="icon">💬</div>
+                    <h3>WhatsApp Inteligente</h3>
+                    <p>Responde automaticamente 80% das dúvidas mais comuns dos seus clientes</p>
+                </div>
+                
+                <div class="solution-feature">
+                    <div class="icon">📅</div>
+                    <h3>Agendamento Automático</h3>
+                    <p>Conecta direto com seu Google Calendar - cliente agenda sozinho, quando quiser</p>
+                </div>
+                
+                <div class="solution-feature">
+                    <div class="icon">🕐</div>
+                    <h3>24 Horas Ativo</h3>
+                    <p>Trabalha fins de semana, feriados, madrugada - nunca perde um cliente</p>
+                </div>
+                
+                <div class="solution-feature">
+                    <div class="icon">💰</div>
+                    <h3>Economia Real</h3>
+                    <p>Custa menos de R$ 200/mês - um funcionário custa R$ 2.000+ mensais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>✅ Por que Escolher a SecretarIA?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🎯 Especializada no seu Nicho</h3>
+                    <p>Desenvolvida especificamente para clínicas médicas/estéticas e escritórios de advocacia</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>⚡ Implementação Rápida</h3>
+                    <p>Em 48 horas sua SecretarIA está funcionando perfeitamente</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>🛡️ Nunca Falha</h3>
+                    <p>Não adoece, não tira férias, não reclama e não te processa</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>📈 ROI Garantido</h3>
+                    <p>Se paga em 15 dias com o aumento de agendamentos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo">
+        <div class="container">
+            <h2>📱 Veja Como Funciona</h2>
+            
+            <div class="chat-demo" id="chatDemo">
+                <div class="message user-message" style="display: none;">
+                    Oi, gostaria de agendar uma consulta
+                </div>
+                <div class="message bot-message" style="display: none;">
+                    Olá! 😊 Ficarei feliz em ajudar você a agendar sua consulta.<br><br>
+                    Para qual especialidade você gostaria de agendar?<br>
+                    • Dermatologia Clínica<br>
+                    • Dermatologia Estética<br>
+                    • Procedimentos
+                </div>
+                <div class="message user-message" style="display: none;">
+                    Dermatologia estética
+                </div>
+                <div class="message bot-message" style="display: none;">
+                    Perfeito! ✨<br><br>
+                    Tenho estas opções disponíveis para você:<br><br>
+                    📅 <strong>Quinta-feira (06/06)</strong><br>
+                    • 14:30h<br>
+                    • 16:00h<br><br>
+                    📅 <strong>Sexta-feira (07/06)</strong><br>
+                    • 09:30h<br>
+                    • 15:30h<br><br>
+                    Qual horário prefere?
+                </div>
+                <div class="message user-message" style="display: none;">
+                    Sexta 15:30h
+                </div>
+                <div class="message bot-message" style="display: none;">
+                    Excelente escolha! ✅<br><br>
+                    <strong>Agendamento confirmado:</strong><br>
+                    📅 Sexta-feira, 07/06<br>
+                    🕐 15:30h<br>
+                    👩‍⚕️ Dra. Maria Silva<br>
+                    📍 Consultório 2<br><br>
+                    Pode me informar seu nome completo para finalizar?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>🚀 Pronto para Revolucionar seu Atendimento?</h2>
+            <p>Fale conosco agora e descubra como a SecretarIA pode aumentar seus agendamentos em 60% já no primeiro mês</p>
+            
+            <a href="https://wa.me/555199235494?text=Oi! Vi a SecretarIA no Instagram e quero saber mais sobre como funciona para minha clínica/escritório" class="whatsapp-btn" target="_blank">
+                <span class="whatsapp-icon">📱</span>
+                Falar com Especialista Agora
+            </a>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                ⚡ Resposta em até 5 minutos • 🎁 Demonstração gratuita
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SecretarIA - Transformando atendimento com inteligência artificial</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+                🤖 A evolução chegou ao seu negócio
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Animação do chat demo
+        function startChatAnimation() {
+            const messages = document.querySelectorAll('#chatDemo .message');
+            let currentMessage = 0;
+            
+            function showNextMessage() {
+                if (currentMessage < messages.length) {
+                    messages[currentMessage].style.display = 'block';
+                    currentMessage++;
+                    setTimeout(showNextMessage, 2000);
+                } else {
+                    // Reinicia a animação após 5 segundos
+                    setTimeout(() => {
+                        messages.forEach(msg => msg.style.display = 'none');
+                        currentMessage = 0;
+                        showNextMessage();
+                    }, 5000);
+                }
+            }
+            
+            showNextMessage();
+        }
+
+        // Inicia a animação quando a página carrega
+        window.addEventListener('load', startChatAnimation);
+
+        // Scroll suave para elementos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
